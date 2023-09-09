@@ -1,0 +1,244 @@
+body{
+    background-color: #004466 !important;
+    padding:0;
+    margin:0;
+    height:100vh;
+    width:100vw;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+  }
+  .backg{
+    position:relative;
+    height:500px;
+    width:500px;
+    border-radius:50%;
+    background-color:rgba(0,0,0,0.1);
+    transform:scale(0.7);
+     
+    }
+    @keyframes flo2{
+        50%{
+          transform: translateX(50px);
+        }
+       
+      }
+  .planet{
+    height:200px;
+    width:200px;
+    border-radius: 50%;
+    position: relative;
+    background-color: #ff9933;
+    top:45px;
+    left:220px;
+    animation-name: flo2;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+  }
+  .r1{
+    background-color: #ffbf80;
+    height:20px;
+    width:110px;
+    border-radius:10px;
+    position: relative;
+    top:60px;
+    left:85px;
+  }
+  .r2{
+    background-color: #ffbf80;
+    height: 15px;
+    width:90px;
+    border-radius:6.5px;
+    position: relative;
+    top:80px;
+    left:110px;
+  }
+  .r3{
+    background-color: #ffbf80;
+    height:30px;
+    width:120px;
+    border-radius: 15px;
+    position: relative;
+    top:78px;
+    left:50px;
+  }
+  .r4{
+    background-color: #ffbf80;
+    height:22px;
+    width:90px;
+    border-radius:11px;
+    position: relative;
+    top:70px;
+    left:12px;
+  }
+  .r5{
+    background-color: rgba(204, 102, 0,0.3);
+    height:15px;
+    width:40px;
+    border-radius:7.5px;
+    position: relative;
+    bottom:50px;
+    left:70px;
+  }
+  .r6{
+    background-color: rgba(204, 102, 0,0.3);
+    height:20px;
+    width:60px;
+    border-radius:11px;
+    position: relative;
+    bottom:25px;
+    left:10px;
+  }
+  .r7{
+    background-color: rgba(204, 102, 0,0.3);
+    height:15px;
+    width:45px;
+    border-radius:7.5px;
+    position: relative;
+    top:40px;
+    left:130px;
+  }
+  .r8{
+    background-color: rgba(255,255,255,0.4);
+    height:12px;
+    width:30px;
+    border-radius:7.5px;
+    position: relative;
+    top:7px;
+    left:32px;
+    
+  }
+  .shad{
+    background-color: transparent;
+    box-shadow: 15px 15px rgba(204, 102, 0,0.3);
+    position: relative;
+    height:200px;
+    width:200px;
+    border-radius: 50%;
+    bottom: 164px;
+    right:16px;
+  }
+  .astro{
+    position: relative;
+    left:131px;
+    bottom: 250px;
+    transform: rotate(-30deg);
+  
+  }
+  .an{
+    animation-name: flo;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    position: relative;
+    bottom: 150px;
+    left:20px;
+  
+  }
+  .an img{
+    width:60%;
+   
+  }
+
+  @keyframes flo{
+    50%{
+      transform: translateY(50px);
+    }
+   
+  }
+  
+  .s1,.s2,.s3,.s4,.s5,.s6{
+    background-color: white;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    position: relative;
+    
+  }
+  .s1{
+    bottom:150px;
+    left:200px;
+
+  }
+  .s2{
+    top:130px;
+    left:254px;
+    
+  }
+  .s3{
+    bottom:98px;
+    left:65px;
+  }
+  .s4{
+    top: 216px;
+    left:249px;
+  }
+  .s5{
+    top: 139px;
+    left:100px;
+  }
+  .s6{
+    top:60px;
+    left:370px;
+  }
+  a{
+      text-decoration:none !important;
+      color: bisque !important;
+  }
+  a:hover{
+    color: yellow !important;
+    letter-spacing: 2px !important;
+  }
+  /* title  */
+  .title-word {
+    animation: color-animation 4s linear infinite;
+  }
+  
+  .title-word-1 {
+    --color-1: #DF8453;
+    --color-2: #ffffff;
+    --color-3: #E4A9A8;
+  }
+  
+  .title-word-2 {
+    --color-1: #DBAD4A;
+    --color-2: #35d565;
+    --color-3: #c038ab;
+  }
+  
+  .title-word-3 {
+    --color-1: #ACCFCB;
+    --color-2: #E4A9A8;
+    --color-3: #ACCFCB;
+  }
+  
+  .title-word-4 {
+    --color-1: #3D8DAE;
+    --color-2: #DF8453;
+    --color-3: #E4A9A8;
+  }
+  
+  @keyframes color-animation {
+    0%    {color: var(--color-1)}
+    32%   {color: var(--color-1)}
+    33%   {color: var(--color-2)}
+    65%   {color: var(--color-2)}
+    66%   {color: var(--color-3)}
+    99%   {color: var(--color-3)}
+    100%  {color: var(--color-1)}
+  }
+  
+  /* Here are just some visual styles. 🖌 */
+  
+  .container {
+    display: grid;
+    place-items: center;  
+    text-align: center;
+    
+  }
+  
+  .title {
+    font-family: "Audiowide", sans-serif;
+    font-weight: 50;
+    font-size: 2rem;
+    text-transform: uppercase;
+  }
